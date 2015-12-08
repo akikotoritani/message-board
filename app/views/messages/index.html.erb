@@ -13,11 +13,11 @@
 </div>
 
 <%= form_for(Message.new) do |f| %>
-  名前:
-  <%= f.text_field :name %>
-<p></p>
-  内容: <textarea class="form-control" rows="3" class="img-rounded"></textarea>
+  <label for="exampleInputName2"　class="control-label">名前：</label>
+  <%= f.text_field :name, class: "form-control" %>
+  <label for="exampleInputName2" class="control-label">内容：</label>
+  <%= f.text_field :body, class: "form-control" %>
 <p></p>
   <%= f.submit class: "btn-success"  %>
-
+</div>
 <% end %>
